@@ -1,0 +1,192 @@
+Task 1:
+Design following page as shown in the image .each row will contain certain cars in a carousel
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+body {
+  background-color: #92a8d1;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+
+.card {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.dropbtn {
+  background-color: #24f2de;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #24f2de;}
+</style>
+</head>
+
+
+<body>
+<br>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Exam</button>
+  <div class="dropdown-content">
+    <a href="#">SSC</a>
+    <a href="#">HSC</a>
+  </div>
+</div>
+</br>
+<h2 style="text-align:center;">General studies</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p>History</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p>Polity</p>
+    
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Economics</p>
+   
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Geography</p>
+     
+    </div>
+  </div>
+</div>
+
+
+<body>
+<h2 style="text-align:center;">English</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p>Speech</p>
+    
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p>Verb tenses</p>
+   
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>clauses</p>
+   
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Adjectives</p>
+     
+    </div>
+  </div>
+</div>
+
+
+
+<body>
+<h2 style="text-align:center;">Logical Reasoning</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p>Puzzle</p>
+     
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p>Age</p>
+      
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Relations</p>
+     
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>code-decode</p>
+   
+    </div>
+  </div>
+</div>
+</body>
+</html>
